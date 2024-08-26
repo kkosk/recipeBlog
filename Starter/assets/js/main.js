@@ -24,3 +24,21 @@ const toggleMenu = () => {
 }
 
 menuToggleIcon.addEventListener('click', toggleMenu);
+
+const bodyElement = document.body;
+const themeToggleBtn = selectElement('#theme-toggle-btn');
+const currentTheme = localStorage.getItem('currentTheme');
+
+if(currentTheme){
+    bodyElement.classList.add('light-theme');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    bodyElement.classList.toggle('light-theme');
+
+    if(bodyElement.classList.contains('light-theme')){
+        localStorage.setItem('currentTheme', 'themeActivate');
+    } else {
+        localStorage.removeItem('currentTheme');
+    }
+});
