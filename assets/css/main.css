@@ -613,6 +613,49 @@ body.light-theme{
     background-color: #2e303b;
 }
 
+/* Recipe section */
+
+.recipe-grid{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 300px auto;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.recipe-grid-image{
+    display: flex;
+}
+
+.recipe-grid-image .recipe-image{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10%;
+    position: inherit;
+}
+
+.recipe-grid-ingredients{
+   font-size: var(--font-size-sm);
+   max-width: 300px;
+   grid-column: 1;
+}
+
+.ingredient{
+    display: block;
+    float: left;
+    width: 300px;
+    padding: 5px;
+}
+
+.recipe-grid-steps{
+    grid-row: 1;
+    grid-column-start: 2;
+}
+
+
+
+/* media queries */
+
 @media screen and (min-width: 700px) {
 
     .trending-recipes-box{
