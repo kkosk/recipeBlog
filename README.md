@@ -1,2 +1,2 @@
 # recipeBlog
-website for sharing my recipes
+Recipe sharing website, this was my tutorial for learning the basics of html, css and js.
